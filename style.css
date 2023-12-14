@@ -1,0 +1,113 @@
+@import url('https://fonts.google.com/specimen/Barlow+Semi+Condensed');
+
+body {
+    height: 95vh;
+    background: radial-gradient(circle,hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    font-family: Barlow Semi Condensed;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+}
+
+.container {
+    width: 1366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    border: 5px solid hsl(217, 16%, 45%);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.results {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    
+}
+
+.results span {
+    font-size: 35px;
+    color: red;
+    vertical-align: middle;
+}
+
+.picks {
+    width: 70%;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 50px;
+}
+
+.rock, .paper, .scissors {
+    background-color: white;
+    border: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rock {
+    border: 25px solid hsl(349, 71%, 52%);
+}
+
+.rock:hover {
+    border: 40px solid hsl(349, 71%, 52%);
+    box-shadow: 0 0 0 3px #e78267;
+    transition: all 0.1s ease; 
+}
+
+.paper {
+    border: 25px solid hsl(230, 89%, 62%);
+}
+
+.paper:hover {
+    border: 40px solid hsl(230, 89%, 62%);
+    box-shadow: 0 0 0 3px #e78267;
+    transition: all 0.1s ease; 
+}
+
+.scissors {
+    border: 25px solid hsl(39, 89%, 49%);
+}
+
+.scissors:hover {
+    border: 40px solid hsl(39, 89%, 49%);
+    box-shadow: 0 0 0 3px #e78267;
+    transition: all 0.1s ease;  
+}
+
+
+.round-result p {
+    margin-top: 60px;
+    font-size: 32px;
+}
+
+.btn-playagain {
+    background-color: white;
+    color: hsl(229, 25%, 31%);
+    font-size: 25px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-playagain:hover {
+    background-color: hsl(229, 25%, 31%);
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s;
+}
